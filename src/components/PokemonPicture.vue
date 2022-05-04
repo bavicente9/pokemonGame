@@ -2,12 +2,13 @@
 <div class="pokemon-container"> 
 
   <img
+    v-if="!showPokemon"
     :src= 'imgSrc' 
     alt="Pokemon"
     class="hidden-pokemon"
   />
   <img
-   v-if="showPokemon"
+   v-else
     :src= 'imgSrc'
     alt="Pokemon"
     class="fade-in"
